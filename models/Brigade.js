@@ -35,8 +35,7 @@ var brigadeSchema = new mongoose.Schema({
       clientSecret: String
     },
     slack: {
-      clientId: String,
-      clientSecret: String
+      token: String
     },
     meetup: {
       consumerKey: String,

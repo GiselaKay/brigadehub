@@ -67,6 +67,7 @@ exports.postBrigade = function (req, res, next) {
       thisBrigade.auth.meetup.consumerSecret = req.body['meetup-client-secret']
       thisBrigade.auth.email.user = req.body['emailuser']
       thisBrigade.auth.email.password = req.body['emailpass']
+      thisBrigade.auth.slack.token = req.body['slack-token']
     }
     thisBrigade.save(function (err, results) {
       if (err) {

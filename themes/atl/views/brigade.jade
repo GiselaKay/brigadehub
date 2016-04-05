@@ -120,6 +120,12 @@ block content
         .col-sm-7
           input.form-control(type='meetup-client-secret', name='meetup-client-secret', secret='meetup-client-secret', value='#{brigade.auth.meetup.consumerSecret}')
     .row
+      h4 Slack Token
+      .form-group
+        label.col-sm-3.control-label(for='slack-token') Token
+        .col-sm-7
+          input.form-control(type='slack-token', name='slack-token', id='slack-token', value='#{brigade.auth.slack.token}')
+    .row
       h4 Contact form email credentials
       .form-group
         label.col-sm-3.control-label(for='emailuser') Brigade email

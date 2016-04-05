@@ -36,8 +36,7 @@ module.exports = function () {
         clientSecret: process.env.GITHUB_SECRET
       },
       slack: {
-        clientId: '',
-        clientSecret: ''
+        token: '4103768284-27314265990-30815070404-fb4bfc4463'
       },
       meetup: {
         consumerKey: process.env.MEETUP_KEY,
