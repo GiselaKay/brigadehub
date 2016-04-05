@@ -15,7 +15,7 @@ exports.index = function (req, res) {
 
 getSlackUsersAmt = function (token) {
   return new Promise (function (resolve, reject) {
-    request('https://slack.com/api/users.list\?token\=xoxp-' + token, function (error, response, body) {
+    request('https://slack.com/api/users.list\?token\=' + token, function (error, response, body) {
       if (!error && response.statusCode === 200 && !JSON.parse(body).error) {
         var slackUsers = JSON.parse(body).members
         resolve(slackUsers.length)
